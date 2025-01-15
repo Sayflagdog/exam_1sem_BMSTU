@@ -71,6 +71,8 @@ VALUES ('INSERT', 'employee_projects', 'manager_user');
 
 SET ROLE manager;
 SELECT * FROM employees;
+
 INSERT INTO employee_projects (employee_id, project_id, role_in_project) VALUES (2, 1, 'Tester');
+
 SET ROLE admin;
 DROP TABLE employees;
